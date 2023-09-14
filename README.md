@@ -1,5 +1,5 @@
 # AI for Enhancing Electronic Monitoring of Fishing_Vessels
-
+![logo](https://github.com/SayanaVrgs/AI_for_Enhancing_Electronic_Monitoring_of_Fishing_Vessels/blob/main/fishboat.jpg)
 ## Overview
 
 One of the major tasks undertaken at the Department of Fisheries (DoF), Canada is catch monitoring. Catch monitoring provides in depth information about the fishing activities on any given fishing expedition. Despite its advantages, and its global use for monitoring, adoption of electronic monitoring system in major fishing regions is still slow. There are two major challenges for this system’s widespread adoption, namely: 
@@ -13,9 +13,12 @@ For this project, the input data was obtained from The Nature Conservancy’s Fi
 
 ## Model used
 Convolutional Neural Networks for Object Detection - RetinaNet
-Our model was implemented on [Keras RetinaNet](https://github.com/fizyr/keras-retinanet) which is based on the Retinanet architecture. It used pre-trained COCO dataset model to implement this project. The input file for the model is a csv file with only image ID, bounding box and label.
+Our model was implemented on [Keras RetinaNet](https://github.com/fizyr/keras-retinanet) which is based on the Retinanet architecture. It used pre-trained COCO dataset model to implement this project. The input file for the model is a csv file with only image ID, bounding box and label. A total of four models were created.
 
 ## Results and performance
+<img align="center" alt="coding_lady" width="800" height="500" src="https://media.tenor.com/S59bPkT0pqcAAAAC/programming.gif">
+
+The above sample image shows the predictions overlayed. Different colour bounding boxes represent different object classes detected.
 In order to measure the performance of the models, we used mAP, mean average precision. The mAP compares the ground-truth bounding box to the detected box and returns a score.
 The higher the score, the more accurate the model is in its deductions. Table 1 summarises the mAP for the four models.
 The below table summarises the mAP for our four models:
