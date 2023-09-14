@@ -1,4 +1,4 @@
-# AI for Enhancing Electronic Monitoring of Fishing_Vessels
+# AI for Enhancing Electronic Monitoring of Fishing Vessels
 ![logo](https://github.com/SayanaVrgs/AI_for_Enhancing_Electronic_Monitoring_of_Fishing_Vessels/blob/main/fishboat.jpg)
 ## Overview
 
@@ -16,9 +16,10 @@ Convolutional Neural Networks for Object Detection - RetinaNet
 Our model was implemented on [Keras RetinaNet](https://github.com/fizyr/keras-retinanet) which is based on the Retinanet architecture. It used pre-trained COCO dataset model to implement this project. The input file for the model is a csv file with only image ID, bounding box and label. A total of four models were created.
 
 ## Results and performance
-<img align="center" alt="coding_lady" width="800" height="500" src="https://media.tenor.com/S59bPkT0pqcAAAAC/programming.gif">
+<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/AI_for_Enhancing_Electronic_Monitoring_of_Fishing_Vessels/blob/main/fishes.jpg">
 
 The above sample image shows the predictions overlayed. Different colour bounding boxes represent different object classes detected.
+
 In order to measure the performance of the models, we used mAP, mean average precision. The mAP compares the ground-truth bounding box to the detected box and returns a score.
 The higher the score, the more accurate the model is in its deductions. Table 1 summarises the mAP for the four models.
 The below table summarises the mAP for our four models:
@@ -26,3 +27,6 @@ The below table summarises the mAP for our four models:
 | ------------- | ------------- | ------------- | ------------- | -------------|
 | Validation Dataset | 24.38%  | 24.38%  | 24.09%  | 40.94%  |
 | Test Dataset  | 24.10%  | 24.34%  | 24.12% | 40.13%  |
+
+## Conclusion
+This project showcases the impact AI can have in enhancing the fishing monitoring process. Although further enhancements and better models would be needed to identify bycatches and other fishing irregulaties, use of such computer vision algorithms could pave way to early and effective adoption of electronic monitoring systems.
